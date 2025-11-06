@@ -36,6 +36,7 @@ jobs:
         run: |
           python3 -m pip install -r requirements.txt
           pip install pytest pytest-cov
+          pip install requests
 
       - name: Run tests
         run: |
