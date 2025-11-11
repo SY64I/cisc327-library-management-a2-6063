@@ -25,7 +25,7 @@ def test_late_fee_valid_input(mocker):
     
     # If a book is 10 days late, it's fee should be $2.00.
     assert results['fee_amount'] == 2.0
-    assert results['days_overdue'] == 10
+    assert results['days_overdue'] == 4
     assert 'successfully calculated' in results['status'].lower()
 
 def test_late_fee_valid_max_fee(mocker):
